@@ -19,7 +19,7 @@ _Note: sudo/root privileges are required to run the install script_
 #### Quick Install
 
 ```bash
-sudo pacman -Sy && sudo pacman -S wget && wget  && sudo bash install_nomad.sh
+sudo pacman -Sy && sudo pacman -S wget && wget https://raw.githubusercontent.com/sigvaldr/arch-nomad/refs/heads/master/arch-nomad-install.sh && sudo chmod +x arch-nomad-install.sh && sudo bash arch-nomad-install.sh
 ```
 
 Project N.O.M.A.D. is now installed on your device! Open a browser and navigate to `http://localhost:8080` (or `http://DEVICE_IP:8080`) to start exploring!
