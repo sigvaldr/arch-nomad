@@ -9,6 +9,9 @@
 # Author                | Crosstalk Solutions, LLC
 # Website               | https://crosstalksolutions.com
 
+
+# Rewritten for Arch by | Sigvaldr
+
 ###################################################################################################################################################################################################
 #                                                                                                                                                                                                 #
 #                                                                                           Color Codes                                                                                           #
@@ -158,7 +161,7 @@ ensure_docker_installed() {
     sudo pacman --noconfirm -S ca-certificates curl
 
     # Install docker
-    sudo pacman --noconfirm -S docker docker-compose
+    sudo pacman --noconfirm -S docker docker-compose docker-buildx
 
     # Add user to docker group
     sudo usermod -aG docker $USER
